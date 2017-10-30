@@ -1,0 +1,301 @@
+@font-face {
+  font-family: 'DancingScript-Regular';
+  src: url('../fuentes/DancingScript.otf');
+}
+
+body {
+  font-family: 'DancingScript-Regular';
+  background: #02010A;
+  align-content: center;
+  margin:0px !important;
+}
+
+header {
+  background: #5b7989;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+}
+
+.header > div {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  display: inline;
+  padding: 10px
+}
+
+nav{
+
+  text-align: right;
+  width: 100%;
+}
+
+.active{
+  text-decoration: none;
+}
+a:link,a:visited,a:hover,a:active {
+  color: white;
+}
+
+
+header h1{
+  text-align: left;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 2px #02010A;
+
+}
+
+img{
+
+  text-shadow: 2px 2px 2px #02010A;
+  width: 50%;
+}
+
+#seccion1{
+  align-items: center;
+  background:  #82c3a6;
+  text-align: center;
+  padding: 20px;
+}
+
+#seccion2{
+  background:  #d5c75f;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  text-align: center;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+#seccion2 div{
+
+  padding-top: 10px;
+  width: 100%;
+}
+
+#imagen2{
+  border: 2px solid ;
+  text-shadow: 2px 2px 2px #82c3a6;
+}
+#imagen2:hover {
+  transform: rotate(10deg);
+}
+
+#imagen3 {
+  border: 2px solid ;
+  text-shadow: 2px 2px 2px #82c3a6;
+}
+
+#imagen3:hover {
+  transform: translate( 20px,-5px);
+}
+
+
+.icono{
+
+  width: 25px;
+  height: 25px;
+}
+
+
+#contenedor01 {
+  display: flex;
+  flex-direction: column;
+  background: #d5c75f ;
+  align-items: center;
+}
+
+#contenedor01  img {
+
+  margin-bottom: 8px;
+  width: 80%;
+}
+
+.contenedor1 > div {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+
+
+}
+
+
+
+
+footer {
+  background: #C6d5c5;
+  padding-top: 10px;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+}
+
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+
+.footer > div {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+
+
+
+}
+
+@media (max-width: 899px) {
+  #contenido{
+    width: 100%;
+
+  }
+}
+
+@media (min-width: 900px) {
+
+
+  .headerFloat{
+    width: 25%;
+  }
+  .title{
+
+    width: 50%;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+  nav{
+
+    text-align: right;
+    width: 100%;
+  }
+
+  header {
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: right;
+  }
+
+  .menu{
+    width: 50%;
+    float: right;
+    text-align: right;
+    padding-right: 10px;
+    align-items: baseline;
+
+  }
+
+  #contenido{
+    margin: auto;
+    align-content: center;
+    width: 900px ;
+
+  }
+
+  #contenido2  {
+    display: flex;
+    flex-direction: column;
+    background: #d5c75f;
+
+  }
+
+  .contenedor1 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%
+  }
+
+  .footer div {
+    width: 25%;
+  }
+
+  #seccion2{
+    background:  #d5c75f;
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: : 20px;
+    text-align: center;
+    width: 100%;
+
+  }
+
+}
+
+div.efecto:nth-child(1) img{
+  -webkit-filter: blur(10px); /* Chrome, Safari, Opera */
+  filter: blur(10px);
+}
+
+div.efecto:nth-child(2) img{
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+  filter: grayscale(100%);
+}
+
+div.efecto:nth-child(3) img{
+  -webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+  filter: sepia(90%);
+}
+
+div.efecto1:nth-child(1) img{
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+  filter: grayscale(100%);
+}
+div.efecto1:nth-child(3) img{
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+  filter: grayscale(100%);
+}
+
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateY(150%%);
+  }
+  60% {
+    transform: translateY(-5%);
+  }
+
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+body {
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+
+
+
+}
